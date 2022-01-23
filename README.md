@@ -1,6 +1,6 @@
 # Project-Euler
 
-Here you will find all my (Nora Haidar's) algorithmic attempts, in C++.
+Here you will find all my algorithmic attempts, in C++.
 
 ## Description from: https://projecteuler.net/
 
