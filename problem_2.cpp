@@ -16,13 +16,19 @@ using namespace std;
 int main(){
     int a = 1;
     int b = 1;
+    int even_sum=0;
 
-    cout << b << '\n';
+    cout << "The Fibonacci sequencee for values that do nnot exceed 4 million: " << '\n';
     while (a <= 4000000){
         int c = b;
         cout << b <<'\n';
+        if (b%2==0)
+            even_sum=even_sum+b;
+            
         b = b + a;
         a = c;
     }
+    
+    cout << '\n' << "The sum of the even-valued terms is: " << even_sum << '\n';
     return 0;
 }
