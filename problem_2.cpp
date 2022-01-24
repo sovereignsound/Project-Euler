@@ -18,7 +18,7 @@ int main(){
     int b = 1;
     int even_sum=0;
 
-    cout << "The Fibonacci sequencee for values that do nnot exceed 4 million: " << '\n';
+    cout << "The Fibonacci sequence for values that do not exceed 4 million: " << '\n';
     while (a <= 4000000){
         int c = b;
         cout << b <<'\n';
