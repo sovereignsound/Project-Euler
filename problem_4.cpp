@@ -24,9 +24,11 @@ bool is_palindrome(int x){
 int main()
 {
     int k;
-    vector <int> h;
-    vector <int> prod_1;
-    vector <int> prod_2;
+    vector<int> h;
+    vector<int> prod_1;
+    vector<int> prod_2;
+    vector<int>::iterator result;
+    
     for (int i = 1000; i>0; i--){
         for (int j = 1000; j>0; j--){
             k = i*j;
@@ -37,12 +39,13 @@ int main()
             }
         }
     }
+    result = max_element(h.begin(), h.end());
+//    cout << "max element at: " << distance(h.begin(), result) << '\n';
+    cout <<"The largest palindrome made from the product of two 3-digit numbers is: " << *result << " = ";
     
-    cout <<"The largest palindrome made from the product of two 3-digit numbers is: " << *max_element(h.begin(), h.end()) << " = ";
+    long index = distance(h.begin(), result);
     
-    int index =
-    
-    cout << prod_1[index] << " X " << prod_2[index];
+    cout << prod_1[index] << " X " << prod_2[index] << endl;
     
     return 0;
     
