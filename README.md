@@ -1,6 +1,6 @@
 # Project-Euler
 
-Here you will find all of my attempts in C++.
+Here you will find all of my successful attempts in C++.
 
 ## Description from: https://projecteuler.net/
 
